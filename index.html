@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1>Todo App</h1>
+        <hr>
+
+        <form class="form--todo">
+            <span>What will you need to do today?</span>
+            <div class="inputField">
+                <input type="text" class="input--todo" placeholder="Ex: Study Javascript">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+            <hr>
+        </form>
+
+        <form class="edit--form hide">
+            <span>Edit your todo</span>
+            <div class="inputField">
+                <input type="text" class="input--edit">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button class="cancel-edit-btn">Cancelar</button>
+            <hr>
+        </form>
+        
+        <div class="allTodo">
+            <div class="todo">
+                <span>Study Javascript</span>
+                <div class="todo-buttons">
+                    <button class="finish--todo">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="edit--todo">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="remove--todo">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="todo">
+                <span>Read a book</span>
+                <div class="todo-buttons">
+                    <button class="finish--todo">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="edit--todo">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="remove--todo">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="todo">
+                <span>Make a post on Linkedin</span>
+                <div class="todo-buttons">
+                    <button class="finish--todo">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="edit--todo">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="remove--todo">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
